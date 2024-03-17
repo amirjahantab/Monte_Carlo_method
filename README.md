@@ -37,3 +37,21 @@ After running the script, it will output the following results:
 - The average number of bets required to reach the goal.
 
 These results provide insights into the expected outcomes of the gambling scenario using the Monte Carlo method.
+
+# Collecting the card
+
+The provided code implements a simulation of drawing cards from a standard deck until one card of each suit (Clubs, Diamonds, Hearts, and Spades) has been drawn. The Monte Carlo method is employed here to estimate the expected number of draws needed to accomplish this task.
+
+Here's how the Monte Carlo method is utilized in this code:
+
+1. **Simulation**: The code simulates the process of drawing cards from the deck until at least one card of each suit is drawn. This process is repeated a specified number of times (`trials`).
+
+2. **Randomness**: At each step of the simulation, a card is randomly chosen from the deck. This randomness mimics the unpredictable nature of drawing cards from a shuffled deck.
+
+3. **Counting**: For each trial, the code keeps track of the number of draws required to obtain at least one card of each suit. This count is stored in the list `s`.
+
+4. **Averaging**: After completing all trials, the code calculates the average number of draws required across all trials by summing up the counts stored in `s` and dividing by the total number of trials (`len(s)`).
+
+5. **Output**: The final result, which represents the average number of draws needed to obtain at least one card of each suit, is printed to the console.
+
+In essence, the Monte Carlo method is used here to approximate the expected value of the number of draws needed to achieve a specific outcome (drawing at least one card of each suit). By running the simulation multiple times and averaging the results, this method provides an estimate of the expected value based on probabilistic reasoning rather than exact calculation.
