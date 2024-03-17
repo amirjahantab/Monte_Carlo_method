@@ -55,3 +55,53 @@ Here's how the Monte Carlo method is utilized in this code:
 5. **Output**: The final result, which represents the average number of draws needed to obtain at least one card of each suit, is printed to the console.
 
 In essence, the Monte Carlo method is used here to approximate the expected value of the number of draws needed to achieve a specific outcome (drawing at least one card of each suit). By running the simulation multiple times and averaging the results, this method provides an estimate of the expected value based on probabilistic reasoning rather than exact calculation.
+
+
+# Random Sampling Algorithm using Monte Carlo Method
+
+This repository contains Python code implementing a random sampling algorithm using the Monte Carlo method. The algorithm generates random samples from a set of elements and calculates the average number of iterations required to collect all unique elements at least once.
+
+## Usage
+
+1. Ensure you have Python installed on your system.
+2. Clone the repository to your local machine:
+
+    ```
+    git clone https://github.com/your-username/random-sampling.git
+    ```
+
+3. Navigate to the directory containing the `random-sampling.py` file.
+4. Run the script with two command-line arguments: `n` (the number of elements) and `trials` (the number of trials to perform):
+
+    ```
+    python random-sampling.py <n> <trials>
+    ```
+
+## Algorithm Description
+
+The algorithm works as follows:
+
+1. Initialize an empty list `s` to store the number of iterations required for each trial.
+2. For each trial:
+    - Initialize a counter `count` to track the number of iterations.
+    - Initialize an empty list `is_collected` of size `n` to track whether each element has been collected.
+    - Initialize a variable `collected_count` to track the number of unique elements collected.
+    - Iterate until all elements have been collected:
+        - Increment `count`.
+        - Generate a random value between 0 and `n-1`.
+        - If the element corresponding to the generated value has not been collected:
+            - Increment `collected_count`.
+            - Mark the element as collected.
+    - Append the value of `count` to the list `s`.
+3. Calculate the average number of iterations required across all trials and print the result.
+
+## Example
+
+Suppose we want to sample from a set of 10 elements (`n = 10`) and perform 1000 trials (`trials = 1000`). We can run the script as follows:
+
+```
+python random-sampling.py 10 1000
+```
+
+The script will output the average number of iterations required to collect all 10 unique elements at least once.
+
