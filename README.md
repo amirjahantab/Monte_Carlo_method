@@ -1,4 +1,4 @@
-Monte Carlo method is a statistical technique that uses random sampling and probability to solve complex problems or estimate unknown quantities. It is named after the famous Monte Carlo Casino in Monaco, known for its games of chance. In the context of the code you provided, the Monte Carlo method is used to simulate a gambling scenario and calculate the probability of winning and the average number of bets required to reach a goal.
+Monte Carlo method is a statistical technique that uses random sampling and probability to solve complex problems or estimate unknown quantities. It is named after the famous Monte Carlo Casino in Monaco, known for its games of chance. In this code, the Monte Carlo method is used to simulate a gambling scenario and calculate the probability of winning and the average number of bets required to reach a goal.
 
 Here's a README.md file for publishing on GitHub:
 
